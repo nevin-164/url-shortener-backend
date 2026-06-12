@@ -50,8 +50,8 @@ Bash
 git clone [https://github.com/nevin-164/url-shortener-backend.git](https://github.com/nevin-164/url-shortener-backend.git)
 cd url-shortener-backend
 mvn spring-boot:run
-🌐 API Endpoints
-1. Create a Short URL
+###🌐 API Endpoints
+##1. Create a Short URL
 POST http://localhost:8080/api/urls (or your configured mapping)
 
 Body:
@@ -60,7 +60,7 @@ JSON
 {
   "longUrl": "[https://en.wikipedia.org/wiki/Java_(programming_language)](https://en.wikipedia.org/wiki/Java_(programming_language))"
 }
-2. Redirect to Original URL
+##2. Redirect to Original URL
 GET http://localhost:8080/{shortKey}
 
 Intercepted by Redis for high-speed retrieval. Redirects the browser via HTTP 302.
